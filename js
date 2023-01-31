@@ -92,3 +92,54 @@
 //     newelem.textContent +="!"
 // })
 // parent.insertBefore(newelem, before)
+
+//324
+//1
+// let parent = document.querySelector('#elem')
+// let nelem = document.createElement('p')
+// nelem.textContent = '!!!'
+// parent.insertAdjacentElement('beforeBegin', nelem)
+
+//2
+// let parent = document.querySelector('#elem')
+// let nelem = document.createElement('p')
+// nelem.textContent = '!!!'
+// parent.insertAdjacentElement('afterEnd', nelem)
+
+//3
+// let parent = document.querySelector('#elem')
+// let nelem = document.createElement('p')
+// nelem.textContent = '!!!'
+// parent.insertAdjacentElement('afterBegin', nelem)
+
+//4
+// let parent = document.querySelector('#elem')
+// let nelem = document.createElement('p')
+// nelem.textContent = '!!!'
+// parent.insertAdjacentElement('beforeEnd', nelem)
+
+//5
+// let parent = document.querySelector('#elem')
+// parent.insertAdjacentHTML('beforeBegin', '<div class="www"><p>text</p><p>text</p><input></div> ');
+
+//325
+
+// let btn = document.querySelector('#btn');
+// let elem = document.querySelector('#elem');
+// btn.addEventListener('click', function(){
+//     let clone = elem.cloneNode(true)
+//     elem.insertAdjacentElement('afterEnd', clone)
+// })
+
+//326
+//1
+// let elem = document.querySelector('#elem');
+// console.log(elem.matches('.www'))
+//2
+// let elem = document.querySelector('#elem');
+// console.log(elem.matches('p'))
+//3
+// let elem1 = document.querySelector('#elem1');
+// let elem2 = document.querySelector('#elem2');
+// console.log(elem1.contains(elem2))
+
